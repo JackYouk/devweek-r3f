@@ -78,7 +78,6 @@ export default function Experience() {
             </Center>
         </Float>
 
-        <Float>
             <Center position-y={-2.5}>
                 <Text3D
                     font='./helvetiker_regular.typeface.json'
@@ -116,7 +115,6 @@ export default function Experience() {
                     />
                 </Text3D>
                 </Center>
-        </Float>
         
 
         <Physics gravity={[0, -0.6, 0]}>
