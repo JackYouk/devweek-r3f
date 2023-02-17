@@ -34,6 +34,11 @@ export default function Experience() {
 
         window.location.href = 'https://twitter.com/midpaqjack'
     }
+    const handleClick2 = (e) => {
+
+        window.location.href = 'https://github.com/JackYouk/devweek-r3f'
+    }
+
     document.body.addEventListener('click', () => {
         glowText.current.material.emissive.b = Math.random() + 1
         glowText.current.material.emissive.g = Math.random() + 1
@@ -83,6 +88,22 @@ export default function Experience() {
                     height={0.1}
                 >
                     Built By jackJack
+                    <meshStandardMaterial
+                        toneMapped={false}
+                        // color={[1.5, 1, 4]} 
+                        color='white'
+                        emissive='white'
+                        emissiveIntensity={3}
+                    />
+                </Text3D>
+                <Text3D
+                    font='./helvetiker_regular.typeface.json'
+                    scale={window.innerWidth < 600 ? 0.1 : 0.2}
+                    onClick={handleClick2}
+                    curveSegments={12}
+                    height={0.1}
+                >
+                    Click me 4 the Github repo
                     <meshStandardMaterial
                         toneMapped={false}
                         // color={[1.5, 1, 4]} 
