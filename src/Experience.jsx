@@ -96,7 +96,10 @@ export default function Experience() {
                         emissiveIntensity={3}
                     />
                 </Text3D>
-                <Text3D
+                
+            </Center>
+            <Center position-y={-3}>
+            <Text3D
                     font='./helvetiker_regular.typeface.json'
                     scale={window.innerWidth < 600 ? 0.1 : 0.2}
                     onClick={handleClick2}
@@ -112,8 +115,9 @@ export default function Experience() {
                         emissiveIntensity={3}
                     />
                 </Text3D>
-            </Center>
+                </Center>
         </Float>
+        
 
         <Physics gravity={[0, -0.6, 0]}>
             <RigidBody type='fixed'>
